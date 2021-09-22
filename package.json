@@ -1,0 +1,52 @@
+{
+  "name": "@nafuzi/brazilian-masks",
+  "version": "1.0.0",
+  "description": "Masks to Brazilian specific form data",
+  "main": "dist/index.js",
+  "module": "dist/brazilian-masks.esm.js",
+  "typings": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.1",
+    "tsdx": "^0.14.1",
+    "typescript": "^4.4.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --coverage",
+    "test:watch": "tsdx test --coverage --watchAll",
+    "lint": "tsdx lint ./src --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/src/index.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/index.ts"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielnafuzi/brazilian-masks.git"
+  },
+  "keywords": [
+    "brazilian",
+    "masks"
+  ],
+  "author": "Gabriel Moraes @gabrielnafuzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielnafuzi/brazilian-masks/issues"
+  },
+  "homepage": "https://github.com/gabrielnafuzi/brazilian-masks#readme"
+}
