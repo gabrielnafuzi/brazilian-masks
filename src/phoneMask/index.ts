@@ -1,5 +1,5 @@
-export const phoneMask = (rawPhone: string) => {
-  const onlyPhoneNumbers = rawPhone.replace(/\D/g, '')
+export const phoneMask = (phone: string) => {
+  const onlyPhoneNumbers = phone.replace(/\D/g, '')
   const isPhoneLengthHigherThanTen = onlyPhoneNumbers.length > 10
   const quantityOfCharsOnLeftSideOfDash = isPhoneLengthHigherThanTen ? 5 : 4
   const regexToSeparateByDash = new RegExp(
