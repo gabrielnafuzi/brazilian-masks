@@ -1,3 +1,9 @@
+import { cepMask } from './cepMask'
+import { cpfMask } from './cpfMask'
+import { cnpjMask } from './cnpjMask'
+import { cpfOrCnpjMask } from './cpfOrCnpj'
+import { phoneMask } from './phoneMask'
+
 export * from './phoneMask'
 export * from './cepMask'
 export * from './cnpjMask'
@@ -11,3 +17,13 @@ export type MasksName =
   | 'cnpjMask'
   | 'cpfMask'
   | 'cpfOrCnpj'
+
+const masks = {
+  cepMask,
+  cpfMask,
+  cnpjMask,
+  cpfOrCnpjMask,
+  phoneMask
+}
+
+export default masks
