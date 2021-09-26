@@ -1,5 +1,7 @@
+import { clear } from 'utils'
+
 export const phoneMask = (phone: string) => {
-  const onlyPhoneNumbers = phone.replace(/\D/g, '')
+  const onlyPhoneNumbers = clear(phone)
   const isPhoneLengthHigherThanTen = onlyPhoneNumbers.length > 10
   const quantityOfCharsOnLeftSideOfDash = isPhoneLengthHigherThanTen ? 5 : 4
   const regexToSeparateByDash = new RegExp(

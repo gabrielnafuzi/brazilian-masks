@@ -33,6 +33,10 @@
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/src/index.ts"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
     ]
   },
   "repository": {

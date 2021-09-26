@@ -5,3 +5,4 @@ dist-ssr
 *.local
 coverage
 dist
+yarn-error.log

@@ -1,6 +1,7 @@
+import { clear } from 'utils'
+
 export const cpfMask = (cpf: string) => {
-  return cpf
-    .replace(/\D/g, '')
+  return clear(cpf)
     .replace(/(\d{3})(\d)/, '$1.$2')
     .replace(/(\d{3})(\d)/, '$1.$2')
     .replace(/(\d{3})(\d)/, '$1-$2')
