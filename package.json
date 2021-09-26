@@ -1,6 +1,6 @@
 {
   "name": "@nafuzi/brazilian-masks",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Some brazilian masks for CNPJ, CPF, CEP and phone",
   "main": "dist/index.js",
   "module": "dist/brazilian-masks.esm.js",
