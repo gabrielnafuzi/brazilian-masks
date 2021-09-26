@@ -16,9 +16,13 @@ export type MasksName =
   | 'cepMask'
   | 'cnpjMask'
   | 'cpfMask'
-  | 'cpfOrCnpj'
+  | 'cpfOrCnpjMask'
 
-const masks = {
+type Masks = {
+  [key in MasksName]: (value: string) => string
+}
+
+const masks: Masks = {
   cepMask,
   cpfMask,
   cnpjMask,
