@@ -1,4 +1,4 @@
-import { clear } from 'utils'
+import { clear } from '../utils'
 
 export const cepMask = (cep: string) => {
   return clear(cep)

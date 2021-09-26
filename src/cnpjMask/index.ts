@@ -1,4 +1,5 @@
-import { clear } from 'utils'
+import { clear } from '../utils'
+
 export const cnpjMask = (cnpj: string) => {
   return clear(cnpj)
     .replace(/(\d{2})(\d)/, '$1.$2')
