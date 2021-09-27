@@ -1,6 +1,6 @@
 import { clear } from '../utils'
 
-export const phoneMask = (phone: string) => {
+export const phone = (phone: string) => {
   const onlyPhoneNumbers = clear(phone)
   const isPhoneLengthHigherThanTen = onlyPhoneNumbers.length > 10
   const quantityOfCharsOnLeftSideOfDash = isPhoneLengthHigherThanTen ? 5 : 4

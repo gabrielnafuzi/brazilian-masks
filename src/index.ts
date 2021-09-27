@@ -1,33 +1,28 @@
-import { cepMask } from './cepMask'
-import { cpfMask } from './cpfMask'
-import { cnpjMask } from './cnpjMask'
-import { cpfOrCnpjMask } from './cpfOrCnpj'
-import { phoneMask } from './phoneMask'
+import { cep } from './cep'
+import { cpf } from './cpf'
+import { cnpj } from './cnpj'
+import { cpfOrCnpj } from './cpfOrCnpj'
+import { phone } from './phone'
 
-export * from './phoneMask'
-export * from './cepMask'
-export * from './cnpjMask'
-export * from './cpfMask'
+export * from './phone'
+export * from './cep'
+export * from './cnpj'
+export * from './cpf'
 export * from './cpfOrCnpj'
 export * from './utils'
 
-export type MasksName =
-  | 'phoneMask'
-  | 'cepMask'
-  | 'cnpjMask'
-  | 'cpfMask'
-  | 'cpfOrCnpjMask'
+export type MasksName = 'phone' | 'cep' | 'cnpj' | 'cpf' | 'cpfOrCnpj'
 
 type Masks = {
   [key in MasksName]: (value: string) => string
 }
 
 const masks: Masks = {
-  cepMask,
-  cpfMask,
-  cnpjMask,
-  cpfOrCnpjMask,
-  phoneMask
+  cep,
+  cpf,
+  cnpj,
+  cpfOrCnpj,
+  phone
 }
 
 export default masks

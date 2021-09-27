@@ -1,7 +1,7 @@
-import { cnpjMask, cpfMask, clear } from '..'
+import { cnpj, cpf, clear } from '..'
 
 const CPF_LENGTH = 11
 
-export const cpfOrCnpjMask = (value: string) => {
-  return clear(value).length <= CPF_LENGTH ? cpfMask(value) : cnpjMask(value)
+export const cpfOrCnpj = (value: string) => {
+  return clear(value).length <= CPF_LENGTH ? cpf(value) : cnpj(value)
 }
