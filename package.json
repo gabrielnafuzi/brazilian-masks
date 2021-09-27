@@ -1,6 +1,6 @@
 {
   "name": "@nafuzi/brazilian-masks",
-  "version": "1.6.3",
+  "version": "1.7.3",
   "description": "Some brazilian masks for CNPJ, CPF, CEP, Phone, Pis",
   "main": "dist/index.js",
   "module": "dist/brazilian-masks.esm.js",
@@ -45,7 +45,12 @@
   },
   "keywords": [
     "brazilian",
-    "masks"
+    "masks",
+    "cep-mask",
+    "cnpj-mask",
+    "cpf-mask",
+    "phone-mask",
+    "pis-mask"
   ],
   "author": "Gabriel Moraes @gabrielnafuzi",
   "license": "MIT",
