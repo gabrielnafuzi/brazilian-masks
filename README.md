@@ -15,6 +15,18 @@ Some masks commonly used in forms in Brazil
 
 - clear (remove all non-numeric characters)
 
+## Installation
+
+```sh
+npm i @nafuzi/brazilian-masks
+```
+
+or
+
+```sh
+yarn add @nafuzi/brazilian-masks
+```
+
 ### Simple use (Vanilla JS)
 
 ```js
