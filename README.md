@@ -13,7 +13,7 @@ Some masks commonly used in forms in Brazil
 
 ## Utility functions
 
-- clear (remove all non-numereic characters)
+- clear (remove all non-numeric characters)
 
 ### Simple use (Vanilla JS)
 
@@ -31,7 +31,7 @@ cepInput.addEventListener('input', (event) => {
 
 ### React (TypeScript)
 
-```ts
+```tsx
 // MaskedInput.tsx
 import { ChangeEvent, HTMLProps } from 'react'
 import masks, { MasksName } from '@nafuzi/brazilian-masks'
